@@ -35,12 +35,25 @@
   padding-bottom: 4rem;
 }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
+.about-mf .about-img,
+.img-about .about-img {
+		margin-bottom: 3rem;
+}
+
+@media (max-width: 991.98px) {
+	.about-mf .about-img,
+	.img-about .about-img {
+		margin-bottom: 1.5rem;
+	}
 }
 
 .about-mf .about-img img {
-  margin-left: 10px;
+	width: 240px;
+	height: 240px;
+	margin-left: 0;
+	display: block;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 
@@ -231,54 +244,39 @@
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>PYTHON</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data cleaning</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
+
+									<style>
+									/* Local skills list styles to match site design */
+									.skill-mf .skill-list{margin-top:8px;}
+									.skill-mf .skill-category{margin-bottom:18px;}
+									.skill-mf .skill-category .cat-title{color:#ffbd39;font-weight:700;letter-spacing:1px;margin-bottom:8px;font-size:14px;text-transform:uppercase}
+									.skill-mf .skill-category .cat-items{color:#ffffff;font-size:16px;line-height:1.9;margin:0;font-weight:600}
+									.skill-mf .title-s{color:#ffffff;font-weight:700;margin-bottom:6px}
+									@media (max-width:991.98px){.skill-mf .skill-list{margin-top:6px}}
+									</style>
+
+									<div class="skill-list">
+										<div class="skill-category">
+											<div class="cat-title">Languages</div>
+											<div class="cat-items">Python, MySQL, C++</div>
+										</div>
+
+										<div class="skill-category">
+											<div class="cat-title">ML &amp; Data Science</div>
+											<div class="cat-items">Scikit-learn, XGBoost, LightGBM, CatBoost, TabNet, Feature Engineering, ML Pipelines, Model Evaluation</div>
+										</div>
+
+										<div class="skill-category">
+											<div class="cat-title">Data Skills</div>
+											<div class="cat-items">EDA, Data Cleaning, Data Visualization, Statistical Analysis</div>
+										</div>
+
+										<div class="skill-category">
+											<div class="cat-title">Tools</div>
+											<div class="cat-items">Git, GitHub, Jupyter Notebooks, VS Code, Kaggle</div>
+										</div>
 									</div>
 
-									<span>C++</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Feature Engineering</span> <span class="pull-right">70%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Statistical Analysis</span> <span class="pull-right">65%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>EDA(Exploratory Data Analysis)</span> <span class="pull-right">65%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-
-									<!-- <span>Machine Learning</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div> -->
 								</div>
 							</div>
 						</div>
@@ -291,7 +289,8 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>Hello, I am Harshi Gupta, a passionate AI and Data Science professional focused on creating intelligent, practical, and influential solutions with technology. I am currently pursuing my degree in Artificial Intelligence and Data Science (AI-DS), and I'm building a strong foundation in analytical thinking, machine learning, and problem-solving.<br>My interest in AI began with my curiosity about how data can be converted into content, so I started looking into data analysis, different machine learning algorithms, and building models. I have experience using Python programming, file handling, NumPy operations, and other data science tools, and I work on building my technical skills each day.<br>I am interested in using AI to solve real-world problems—through smarter decision-making systems, pattern recognition, or predictive analytics. I want to build accurate, ethical, and influential solutions while learning and growing from the ever-changing and growing landscape of AI.</p>
+								<p>I'm Harshi Gupta, a second-year B.Tech student in AI & Data Science at VIPS, Delhi (CGPA: 9.16). I work on applied ML — tabular data, predictive modeling, and research-backed pipelines. My recent work includes a mental health risk prediction system using TabNet (91.67% accuracy, 0.986 AUC), with research under review at Springer LNNS.<br>
+                                On the competition front, I've been shortlisted at EY Techathon 6.0 (1.85L+ registrations) and YUVAi 2026 (2400+ global teams), and placed Top 10 at IIT Roorkee's E-Summit. Outside that, I contribute to open source and run events as Secretary of CODEX. Currently looking for research internships where I can work on real problems.  </p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<!-- <li class="d-flex"><span>Profile:</span> <span>Data Science 
 									</span></li> -->
@@ -299,7 +298,7 @@
 									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
 									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
-									<li class="d-flex"><span>Other Skills:</span> <span>Git,Github &amp; VS Code</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Git, GitHub, VS Code, Jupyter Notebooks&amp; Kaggle </span></li>
 									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Writing</span></li>
 									
 								</ul>
@@ -334,6 +333,12 @@
             <p>Enthusiastic and self-motivated Data Science undergraduate with a passion for open-source development and problem-solving. Seeking to contribute to meaningful projects as a GSSoC contributor while enhancing my technical and collaborative skills. Eager to learn, grow, and make valuable contributions to the developer community.</p>
           </div>
         </div>
+
+		<div class="row justify-content-center mt-4">
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="https://drive.google.com/file/d/1KDuSOPmY3BDKJ-5OVOkpQBJO2RyEGk63/view?usp=sharing" class="btn btn-primary py-4 px-5">Download Resume</a></p>
+			</div>
+		</div>
 
 		<!-- <div class="row">
 			<h1 class="big-4">Experience</h1>
@@ -390,7 +395,7 @@
     					<span class="date">2024-2028</span>
     					<h2>Bachelor of Engineering</h2>
     					<span class="position">Vivekananda Institute Of professional Studies- Technical Campus</span>
-    					<p class="mt-4">CGPA:9.06</p>
+						<p class="mt-4">CGPA:9.16</p>
     				</div>
     			</div>
 
@@ -399,17 +404,13 @@
     					<span class="date">2010-2024</span>
     					<h2>Higher Secondary School</h2>
     					<span class="position">Richmondd Global School</span>
-    					<p class="mt-4">Grade(Class XII): 81.2%</p>
-						<p class="mt-4">Grade(Class X): 89.7%</p>
+                        <p class="mt-4 mb-2">Grade(Class XII): 81.2%</p>
+						<p class="mt-2">Grade(Class X): 89.7%</p>
     				</div>
 				</div>
     		</div>
 
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1sO8G-BjuZEO4HWY44LV8A6jvjRxuH3bc/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download Resume</a></p>
-    			</div>
-    		</div>
+    	
     	</div>
     </section>
 
@@ -421,7 +422,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data science projects on Pandas Numpy Matpoltlib &amp; Seaborn .</p>
+			<p>Below are the sample Data science projects on Pandas Numpy Matpoltlib, Seaborn &amp; Scikit-Learn .</p>
           </div>
         </div>
         <div class="row d-flex">
@@ -431,7 +432,7 @@
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/BanduAI/BanduAIProject.git">Bandhu AI</a></h3><p>A neighborhood assistance application prototype enabling locals to connect and support each other.Focused on user flows, accessibility, and rule-based interactions to encourage community engagement.</p>
+				<h3 class="heading"><a href="https://github.com/BanduAI/BanduAIProject.git">Multi-Model Mental Health Prediction System</a></h3><p>Built an ML Model to classify mental health risk in students using academic and demographic features: CGPA, depression indicators, treatment history, and year of study. Benchmarked XGBoost, LightGBM, CatBoost, and TabNet; TabNet achieved best performance with 91.67% accuracy and 0.986 AUC. Research under review at ICDAM 2026, Springer LNNS (Scopus-indexed).</p>
               </div>
             </div>
           </div>
@@ -586,7 +587,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1sO8G-BjuZEO4HWY44LV8A6jvjRxuH3bc/view?usp=drive_link">resumelink</a></p>
+	            <p><a href="https://drive.google.com/file/d/1KDuSOPmY3BDKJ-5OVOkpQBJO2RyEGk63/view?usp=sharing">resumelink</a></p>
 	          </div>
           </div>
 
